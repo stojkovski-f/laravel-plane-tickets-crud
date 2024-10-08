@@ -1,58 +1,81 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 
-## Airplane Tickets Management API (concept)
-
-This is a a proof of concept demo app of a minimal Laravel API. The bussines logic revolves around a hypotetical scenario of customers, or other intermediary systems booking plane tickets, caneling trips or modifying exiting booked tickets.
+# DEMO APP - Minimal Laravel API
+### Airplane Tickets Management 
+This demo showcases a streamlined Laravel API for a virtual airline ticketing system. It demonstrates core functionalities including booking, canceling, and modifying plane tickets, catering to both direct customer use and integration with other systems.
 
 
 - Live demo [https://demo.filipstojkovski.com](https://demo.filipstojkovski.com)
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- API Documentation [Swager docs](https://demo.filipstojkovski.com/api/documentation).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+# Local Setup
+### Prerequisites
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Git installed on your local machine
+- PHP 8.3
+- Composer
+- Node.js and npm
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-### Premium Partners
+### Step-by-Step Guide
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+1. **Clone the repository:**
+    
+    ```bash
+    git clone https://github.com/stojkovski-f/laravel-plane-tickets-crud
+    cd laravel-plane-tickets-crud
+    ```
+    
+2. **Install PHP dependencies:**
+    
+    ```bash
+    composer install
+    ```
+    
+3. **Install JavaScript dependencies:**
+    
+    ```bash
+    npm install
+    ```
+    
+4. **Create a copy of the .env file:**
+    
+    ```bash
+    cp .env.example .env
+    ```
+    
+5. **Generate an application key:**
+    
+    ```bash
+    php artisan key:generate
+    ```
+    
+6. **Configure your database in the .env file:**Update the DB_* variables to match your local database setup.
+7. **Run database migrations:**
+    
+    ```bash
+    php artisan migrate
+    ```
+    
+8. **Compile assets:**
+    
+    ```bash
+    npm run dev
+    ```
+    
+9. **Start the development server:**
+    
+    ```bash
+    php artisan serve
+    ```
+    
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Open the app with the url that the console returns (ussualy http://localhost:8000).
 
 ## License
 
